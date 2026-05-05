@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap');
+@import 'variables.css';
+
+/* ========== Reset & Base ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-secondary);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-neutral-100);
+  background-color: var(--color-dark);
+  min-height: 100vh;
+}
+
+/* ========== Semantic Typography ========== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+h1 { font-size: var(--text-xl); }
+h2 { font-size: var(--text-lg); }
+h3 { font-size: var(--text-md); }
+
+p { margin-bottom: var(--space-md); color: var(--color-neutral-300); }
+
+a {
+  color: var(--color-cyan);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+a:hover { color: var(--color-cyan-light); }
+
+/* ========== Navigation - Sticky ========== */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(10, 14, 39, 0.95);
+  backdrop-filter: blur(10px);
+  padding: var(--space-md) var(--space-lg);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: var(--space-lg);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav a {
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--space-xs) var(--space-sm);
+  transition: all var(--transition-normal);
+}
+
+nav a:hover {
+  color: var(--color-emerald);
+  border-bottom: 2px solid var(--color-emerald);
+}
+
+/* ========== Main Sections ========== */
+section {
+  padding: var(--space-xl) var(--space-lg);
+  scroll-margin-top: 60px;
+}
+
+header.hero {
+  padding: var(--space-2xl) var(--space-lg);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--color-dark) 0%, var(--color-dark-light) 100%);
+}
+
+/* ========== Semantic Articles & Cards ========== */
+article {
+  background-color: var(--color-dark-light);
+  border-radius: 0.75rem;
+  padding: var(--space-lg);
+  margin-bottom: var(--space-lg);
+  border: 1px solid var(--color-neutral-700);
+  transition: all var(--transition-normal);
+}
+
+article:hover {
+  transform: translateY(-4px);
+  border-color: var(--color-cyan);
+  box-shadow: 0 10px 20px rgba(0, 212, 255, 0.1);
+}
+
+/* ========== Buttons ========== */
+button {
+  font-family: inherit;
+  font-weight: 600;
+  padding: var(--space-sm) var(--space-lg);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  font-size: var(--text-base);
+}
+
+.btn-primary {
+  background-color: var(--color-cyan);
+  color: var(--color-dark);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-cyan-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(0, 212, 255, 0.3);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: var(--color-cyan);
+  border: 2px solid var(--color-cyan);
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-cyan);
+  color: var(--color-dark);
+}
+
+/* ========== Footer ========== */
+footer {
+  background-color: var(--color-dark-light);
+  padding: var(--space-lg);
+  text-align: center;
+  border-top: 1px solid var(--color-neutral-700);
+  margin-top: var(--space-xl);
+}
+
+footer p {
+  margin: var(--space-sm) 0;
+  font-size: var(--text-sm);
+}
+
+/* ========== Responsive - Tablet (768px) ========== */
+@media (min-width: 768px) {
+  section { padding: var(--space-2xl) var(--space-xl); }
+  nav ul { gap: var(--space-xl); }
+}
+
+/* ========== Responsive - Desktop (1024px) ========== */
+@media (min-width: 1024px) {
+  section { padding: var(--space-2xl); }
+}

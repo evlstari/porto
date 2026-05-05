@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio Evi Lestari - QA Specialist B2B IT Product with Mobile Development Background"
+    />
+    <meta name="author" content="Evi Lestari" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/variables.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/components.css" />
+
+    <title>Evi Lestari - QA Specialist & Mobile Developer</title>
+  </head>
+  <body>
+    <!-- ========== Navigation - Semantic <nav> ========== -->
+    <nav aria-label="Main Navigation">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- ========== Main Content ========== -->
+    <main>
+      <!-- Hero Section - Semantic <header> -->
+      <header id="home" class="hero">
+        <h1>Mobile Dev <span class="text-gradient">→ Smarter QA</span></h1>
+        <p>
+          QA Specialist B2B IT Product | 1+ Year Professional Experience |
+          Mobile Development Background
+        </p>
+        <p
+          style="
+            font-size: var(--text-sm);
+            color: var(--color-neutral-500);
+            margin-top: var(--space-lg);
+          "
+        >
+          Transforming testing perspective into measurable quality outcomes
+        </p>
+
+        <div class="cta-buttons">
+          <button
+            class="btn-primary"
+            onclick="
+              document
+                .getElementById('projects')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            View My Work
+          </button>
+          <button
+            class="btn-secondary"
+            onclick="
+              document
+                .getElementById('contact')
+                .scrollIntoView({ behavior: 'smooth' })
+            "
+          >
+            Get In Touch
+          </button>
+        </div>
+      </header>
+
+      <!-- Testing Journey Section - Semantic <section> -->
+      <section id="journey">
+        <h2>🚀 My QA Testing Journey</h2>
+        <p>
+          From mobile developer to quality assurance specialist - understanding
+          both worlds
+        </p>
+
+        <div class="journey-container">
+          <!-- Journey Step 1 - Semantic <article> -->
+          <article class="journey-step">
+            <h3>Mobile Dev Foundation</h3>
+            <p>
+              Started with Android mobile development as a lab assistant,
+              building Flutter apps and understanding user experience from
+              developer perspective.
+            </p>
+          </article>
+
+          <!-- Journey Step 2 -->
+          <article class="journey-step">
+            <h3>Freelance Frontend</h3>
+            <p>
+              Worked as freelance Front-End Mobile developer, deepening
+              knowledge in Flutter and Android platforms while managing client
+              projects independently.
+            </p>
+          </article>
+
+          <!-- Journey Step 3 -->
+          <article class="journey-step">
+            <h3>Shift to QA</h3>
+            <p>
+              Recognized testing gaps in development cycle. Made strategic
+              career pivot to QA, bringing developer mindset to quality
+              assurance methodology.
+            </p>
+          </article>
+
+          <!-- Journey Step 4 -->
+          <article class="journey-step">
+            <h3>B2B Specialist</h3>
+            <p>
+              Now 1+ year as QA Specialist in B2B IT Product environment, where
+              thoroughness and risk assessment are critical for enterprise
+              clients.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Project Case Studies Section -->
+      <section id="projects">
+        <h2>📊 Project Case Studies</h2>
+        <p>Real-world challenges solved through strategic QA approach</p>
+
+        <div class="projects-grid">
+          <!-- Project 1 - Semantic <article> -->
+          <article class="project-card">
+            <h3>App Testing Automation Framework</h3>
+
+            <div class="challenge">
+              <h4>🎯 Challenge</h4>
+              <p>
+                Manual testing consuming 60% of sprint capacity, slowing release
+                cycle and introducing human error in repetitive test cases.
+              </p>
+            </div>
+
+            <div class="solution">
+              <h4>💡 Solution</h4>
+              <p>
+                Designed and implemented Selenium automation framework with
+                CI/CD integration. Created test suite covering 200+ critical
+                user flows with priority-based execution strategy.
+              </p>
+            </div>
+
+            <div class="impact">
+              <h4>📈 Impact</h4>
+              <div class="metrics">
+                <span class="metric">↓ 70% faster testing</span>
+                <span class="metric">↓ 40% fewer bugs</span>
+                <span class="metric">↑ 90% coverage</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <h3>Cross-Platform Mobile QA Strategy</h3>
+
+            <div class="challenge">
+              <h4>🎯 Challenge</h4>
+              <p>
+                Flutter app behaving differently on iOS vs Android. Customer
+                complaints about inconsistent user experience across platforms.
+                No systematic testing approach.
+              </p>
+            </div>
+
+            <div class="solution">
+              <h4>💡 Solution</h4>
+              <p>
+                Developed platform-specific test scenarios. Implemented device
+                matrix testing with real devices and emulators. Created QA
+                checklist for platform-specific behaviors.
+              </p>
+            </div>
+
+            <div class="impact">
+              <h4>📈 Impact</h4>
+              <div class="metrics">
+                <span class="metric">↓ 50% platform bugs</span>
+                <span class="metric">↑ 95% consistency</span>
+                <span class="metric">⭐ 4.8 rating</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <h3>API Testing & Monitoring System</h3>
+
+            <div class="challenge">
+              <h4>🎯 Challenge</h4>
+              <p>
+                Backend API stability unclear. Production incidents reported by
+                customers before internal detection. No contract testing or
+                monitoring in place.
+              </p>
+            </div>
+
+            <div class="solution">
+              <h4>💡 Solution</h4>
+              <p>
+                Implemented contract testing (Pact) for API compatibility. Set
+                up continuous API monitoring with alerts. Created performance
+                baseline tests with SLA validation.
+              </p>
+            </div>
+
+            <div class="impact">
+              <h4>📈 Impact</h4>
+              <div class="metrics">
+                <span class="metric">↑ 99.9% uptime</span>
+                <span class="metric">↓ zero incidents</span>
+                <span class="metric">⚡ early detection</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- QA Perspective Section -->
+      <section>
+        <div style="max-width: 900px; margin: 0 auto">
+          <div class="qa-perspective">
+            <h3>💭 My QA Testing Perspective</h3>
+            <p>
+              <strong
+                >Why Mobile Background Makes Me a Better QA Specialist:</strong
+              >
+            </p>
+
+            <ul class="insight-list">
+              <li>
+                <strong>User-Centric Testing:</strong> Mobile dev experience
+                means I understand real user constraints - battery, network,
+                screen sizes. Testing reflects actual usage patterns.
+              </li>
+              <li>
+                <strong>Performance Mindset:</strong> Knowing how code executes
+                helps me identify performance bottlenecks others miss. Every
+                millisecond matters in mobile.
+              </li>
+              <li>
+                <strong>Cross-Layer Communication:</strong> Fluent in both
+                development and QA languages. I bridge teams effectively,
+                reducing misunderstandings about requirements.
+              </li>
+              <li>
+                <strong>Technical Depth:</strong> Can write sophisticated test
+                automation. Understand APIs, databases, and system architecture
+                - not just UI workflows.
+              </li>
+              <li>
+                <strong>Risk Assessment:</strong> Experience shipping features
+                to production means I spot risky areas automatically. Strategic
+                testing for high-impact scenarios.
+              </li>
+            </ul>
+
+            <p
+              style="
+                margin-top: var(--space-lg);
+                font-style: italic;
+                color: var(--color-neutral-300);
+              "
+            >
+              "Quality is not an act, it's a habit. My habit comes from
+              understanding both building and breaking systems."
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about">
+        <h2>👤 About Me</h2>
+
+        <div class="about-container">
+          <div class="about-text">
+            <h3>QA Specialist B2B IT Product</h3>
+            <p>
+              With 1+ year of professional experience in quality assurance for
+              B2B IT products, I bring a unique perspective: a mobile
+              developer's mindset combined with comprehensive testing expertise.
+            </p>
+
+            <p>
+              My journey from Android development (as a lab assistant) through
+              freelance Flutter development to professional QA has equipped me
+              to understand software from multiple angles - the developer's
+              implementation challenge, the end-user's experience, and the
+              tester's quality responsibility.
+            </p>
+
+            <p><strong>I specialize in:</strong></p>
+            <div class="skills-grid">
+              <div class="skill-badge">Automation Testing</div>
+              <div class="skill-badge">Mobile QA</div>
+              <div class="skill-badge">API Testing</div>
+              <div class="skill-badge">Test Strategy</div>
+              <div class="skill-badge">Cross-Platform</div>
+              <div class="skill-badge">Performance Testing</div>
+            </div>
+          </div>
+
+          <div>
+            <h3>Key Statistics</h3>
+            <div class="about-stats">
+              <div class="stat">
+                <div class="stat-number">1+</div>
+                <div class="stat-label">Years QA Experience</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">3+</div>
+                <div class="stat-label">Years Development Background</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Automation Test Cases</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Major Projects</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">99.9%</div>
+                <div class="stat-label">Testing Accuracy</div>
+              </div>
+              <div class="stat">
+                <div class="stat-number">∞</div>
+                <div class="stat-label">Quality Obsession</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact">
+        <h2 class="text-center">📬 Let's Connect</h2>
+        <p class="text-center">
+          Interested in discussing QA strategies, testing challenges, or
+          opportunities? I'm always open to conversations about quality.
+        </p>
+
+        <div
+          style="
+            margin-top: var(--space-xl);
+            display: flex;
+            gap: var(--space-lg);
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <button class="btn-primary">📧 Email Me</button>
+          <button class="btn-secondary">💼 LinkedIn</button>
+          <button class="btn-secondary">🐙 GitHub</button>
+        </div>
+
+        <p
+          class="text-center"
+          style="
+            margin-top: var(--space-xl);
+            font-size: var(--text-sm);
+            color: var(--color-neutral-500);
+          "
+        >
+          Available for contract work, full-time positions, and consulting on QA
+          strategy & testing automation.
+        </p>
+      </section>
+    </main>
+
+    <!-- ========== Footer - Semantic <footer> ========== -->
+    <footer>
+      <p>&copy; 2026 Evi Lestari. All rights reserved.</p>
+      <p>
+        Designed & built with semantic HTML5, accessibility-first approach, and
+        testing mindset.
+      </p>
+    </footer>
+
+    <!-- ========== Scripts ========== -->
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

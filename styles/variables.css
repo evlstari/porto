@@ -1,0 +1,40 @@
+/* Design Tokens - Evi Lestari Portfolio */
+
+:root {
+  /* Color Palette */
+  --color-dark: #0a0e27;
+  --color-dark-light: #1a1f3a;
+  --color-cyan: #00d4ff;
+  --color-cyan-light: #33e0ff;
+  --color-emerald: #10b981;
+  --color-emerald-light: #34d399;
+  --color-neutral-900: #1a1a2e;
+  --color-neutral-700: #374151;
+  --color-neutral-500: #6b7280;
+  --color-neutral-300: #d1d5db;
+  --color-neutral-100: #f3f4f6;
+
+  /* Typography */
+  --font-primary: 'Geist', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  /* Font Sizes */
+  --text-xl: 2.25rem;
+  --text-lg: 1.875rem;
+  --text-md: 1.25rem;
+  --text-base: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+
+  /* Spacing (8px base) */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 2rem;
+  --space-xl: 3rem;
+  --space-2xl: 4rem;
+
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-normal: 300ms ease-in-out;
+}
