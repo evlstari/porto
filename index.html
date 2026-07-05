@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/components.css" />
 
-    <title>Evi Lestari - QA Specialist & Mobile Developer</title>
+    <title>Evi Lestari - QA Engineer</title>
   </head>
   <body>
     <!-- ========== Navigation - Semantic <nav> ========== -->
@@ -30,6 +30,7 @@
 
     <!-- ========== Main Content ========== -->
     <main>
+      <canvas id="bg-canvas"></canvas>
       <!-- Hero Section - Semantic <header> -->
       <header id="home" class="hero">
         <h1>From Builder <span class="text-gradient">→ Quality Guard</span></h1>
@@ -81,9 +82,432 @@
         </p>
 
         <div class="journey-container">
-          <!-- Journey Step 1 - Semantic <article> -->
+          <div class="wrap responsive-timeline">
+            <!-- Versi DESKTOP: horizontal, ditampilkan default, disembunyikan saat layar sempit -->
+            <svg class="tl-desktop" viewBox="0 0 820 220">
+              <line
+                x1="80"
+                y1="80"
+                x2="740"
+                y2="80"
+                stroke="#9ca3af"
+                stroke-width="1.5"
+                marker-end="url(#arrowResp)"
+              />
+              <circle
+                cx="120"
+                cy="80"
+                r="26"
+                fill="#00d4ff"
+                stroke="#33e0ff"
+                stroke-width="0.5"
+              />
+              <path
+                d="M108,70 L100,80 L108,90"
+                fill="none"
+                stroke="white"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M132,70 L140,80 L132,90"
+                fill="none"
+                stroke="white"
+                stroke-width="5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <text
+                x="120"
+                y="120"
+                text-anchor="middle"
+                font-size="13"
+                font-weight="600"
+                fill="#3b82f6"
+                class="clickable-text"
+                onclick="openPopup(1)"
+              >
+                1. Built Apps
+              </text>
+              <text
+                x="120"
+                y="138"
+                text-anchor="middle"
+                font-size="11"
+                fill="#ffffff"
+              >
+                Flutter/Android +
+              </text>
+              <text
+                x="120"
+                y="154"
+                text-anchor="middle"
+                font-size="11"
+                fill="#ffffff"
+              >
+                geofencing thesis
+              </text>
+              <circle
+                cx="300"
+                cy="80"
+                r="26"
+                fill="#00d4ff"
+                stroke="#33e0ff"
+                stroke-width="0.5"
+              />
+              <rect x="286" y="76" width="28" height="18" rx="2" fill="white" />
+              <rect
+                x="294"
+                y="68"
+                width="12"
+                height="8"
+                rx="2"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              />
+              <text
+                x="300"
+                y="120"
+                text-anchor="middle"
+                font-size="13"
+                font-weight="600"
+                fill="#3b82f6"
+                onclick="openPopup(2)"
+                class="clickable-text"
+              >
+                2. Solo Freelance
+              </text>
+              <text
+                x="300"
+                y="138"
+                text-anchor="middle"
+                font-size="11"
+                fill="#ffffff"
+              >
+                Requirement to
+              </text>
+              <text
+                x="300"
+                y="154"
+                text-anchor="middle"
+                font-size="11"
+                fill="#ffffff"
+              >
+                release, alone
+              </text>
+              <circle
+                cx="480"
+                cy="80"
+                r="26"
+                fill="#00d4ff"
+                stroke="#33e0ff"
+                stroke-width="0.5"
+              />
+              <circle
+                cx="475"
+                cy="74"
+                r="9"
+                fill="none"
+                stroke="white"
+                stroke-width="3"
+              />
+              <line
+                x1="482"
+                y1="81"
+                x2="491"
+                y2="90"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+              />
+              <text
+                x="480"
+                y="120"
+                text-anchor="middle"
+                font-size="13"
+                font-weight="600"
+                fill="#3b82f6"
+                onclick="openPopup(3)"
+                class="clickable-text"
+              >
+                3. Moved to QA
+              </text>
+              <text
+                x="480"
+                y="138"
+                text-anchor="middle"
+                font-size="11"
+                fill="#ffffff"
+              >
+                Deliberate shift,
+              </text>
+              <text
+                x="480"
+                y="154"
+                text-anchor="middle"
+                font-size="11"
+                fill="#ffffff"
+              >
+                deeper into eng.
+              </text>
+              <circle
+                cx="660"
+                cy="80"
+                r="26"
+                fill="#00d4ff"
+                stroke="#33e0ff"
+                stroke-width="0.5"
+              />
+              <path
+                d="M648,80 L656,88 L672,70"
+                fill="none"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <text
+                x="660"
+                y="120"
+                text-anchor="middle"
+                font-size="13"
+                font-weight="600"
+                fill="#3b82f6"
+                onclick="openPopup(4)"
+                class="clickable-text"
+              >
+                4. QA in B2B
+              </text>
+              <text
+                x="660"
+                y="138"
+                text-anchor="middle"
+                font-size="11"
+                fill="#ffffff"
+              >
+                1+ yr, enterprise
+              </text>
+              <text
+                x="660"
+                y="154"
+                text-anchor="middle"
+                font-size="11"
+                fill="#ffffff"
+              >
+                risk assessment
+              </text>
+              <defs>
+                <marker
+                  id="arrowResp"
+                  viewBox="0 0 10 10"
+                  refX="8"
+                  refY="5"
+                  markerWidth="6"
+                  markerHeight="6"
+                  orient="auto"
+                >
+                  <path
+                    d="M2 1L8 5L2 9"
+                    fill="none"
+                    stroke="#9ca3af"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </marker>
+              </defs>
+            </svg>
+
+            <!-- Versi MOBILE: vertikal, disembunyikan default, ditampilkan saat layar sempit -->
+            <!-- Jarak antar node: 220px (sebelumnya 180px) -> garis timeline jadi lebih panjang/lega -->
+            <svg class="tl-mobile" viewBox="0 0 680 860">
+              <line
+                x1="90"
+                y1="80"
+                x2="90"
+                y2="780"
+                stroke="#9ca3af"
+                stroke-width="1.5"
+                marker-end="url(#arrowResp2)"
+              />
+              <circle
+                cx="90"
+                cy="140"
+                r="45"
+                fill="#00d4ff"
+                stroke="#33e0ff"
+                stroke-width="0.5"
+              />
+              <path
+                d="M78,130 L70,140 L78,150"
+                fill="none"
+                stroke="white"
+                stroke-width="9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M102,130 L110,140 L102,150"
+                fill="none"
+                stroke="white"
+                stroke-width="9"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <text
+                x="150"
+                y="134"
+                font-size="35"
+                font-weight="600"
+                fill="#3b82f6"
+                onclick="openPopup(1)"
+                class="clickable-text"
+              >
+                1. Built Apps
+              </text>
+              <text x="150" y="164" font-size="22" fill="#ffffff">
+                Flutter/Android + geofencing thesis
+              </text>
+              <circle
+                cx="90"
+                cy="360"
+                r="45"
+                fill="#00d4ff"
+                stroke="#33e0ff"
+                stroke-width="0.5"
+              />
+              <rect x="70" y="356" width="40" height="28" rx="2" fill="white" />
+              <rect
+                x="84"
+                y="348"
+                width="12"
+                height="8"
+                rx="2"
+                fill="none"
+                stroke="white"
+                stroke-width="2"
+              />
+              <text
+                x="150"
+                y="354"
+                font-size="35"
+                font-weight="600"
+                fill="#3b82f6"
+                onclick="openPopup(2)"
+                class="clickable-text"
+              >
+                2. Solo Freelance
+              </text>
+              <text x="150" y="384" font-size="22" fill="#ffffff">
+                Requirement to release, independently
+              </text>
+              <circle
+                cx="90"
+                cy="580"
+                r="45"
+                fill="#00d4ff"
+                stroke="#33e0ff"
+                stroke-width="0.5"
+              />
+              <circle
+                cx="85"
+                cy="574"
+                r="9"
+                fill="none"
+                stroke="white"
+                stroke-width="3"
+              />
+              <line
+                x1="92"
+                y1="581"
+                x2="101"
+                y2="590"
+                stroke="white"
+                stroke-width="9"
+                stroke-linecap="round"
+              />
+              <text
+                x="150"
+                y="574"
+                font-size="35"
+                font-weight="600"
+                fill="#3b82f6"
+                onclick="openPopup(3)"
+                class="clickable-text"
+              >
+                3. Moved to QA
+              </text>
+              <text x="150" y="604" font-size="22" fill="#ffffff">
+                Deliberate shift, deeper into engineering
+              </text>
+              <circle
+                cx="90"
+                cy="800"
+                r="45"
+                fill="#00d4ff"
+                stroke="#33e0ff"
+                stroke-width="0.5"
+              />
+              <path
+                d="M78,800 L86,808 L102,790"
+                fill="none"
+                stroke="white"
+                stroke-width="3"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <text
+                x="150"
+                y="794"
+                font-size="35"
+                font-weight="600"
+                fill="#3b82f6"
+                onclick="openPopup(4)"
+                class="clickable-text"
+              >
+                4. QA in High-Stakes B2B
+              </text>
+              <text x="150" y="824" font-size="22" fill="#ffffff">
+                1+ year, enterprise risk assessment
+              </text>
+              <defs>
+                <marker
+                  id="arrowResp2"
+                  viewBox="0 0 10 10"
+                  refX="8"
+                  refY="5"
+                  markerWidth="6"
+                  markerHeight="6"
+                  orient="auto"
+                >
+                  <path
+                    d="M2 1L8 5L2 9"
+                    fill="none"
+                    stroke="#9ca3af"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </marker>
+              </defs>
+            </svg>
+          </div>
+        </div>
+        <div
+          id="popup-overlay"
+          onclick="if (event.target === this) closePopup();"
+          class="journey-container"
+        >
+          <div class="journey-step hidden" id="popup-content" alt="Popup Content">
+            <h3 id="popup-title"></h3>
+            <p id="popup-desc"></p>
+          </div>
+        </div>
+        <!-- <div class="journey-container">
           <article class="journey-step">
-            <h3>Built Apps, Learned How Users Think</h3>
+            <h3>1. Built Apps, Learned How Users Think</h3>
             <p>
               Started as a lab assistant building Flutter and Android apps,
               learning how users interact with software from the ground up.
@@ -91,41 +515,36 @@
               that required precision in both logic and user behavior.
             </p>
           </article>
-
-          <!-- Journey Step 2 -->
           <article class="journey-step">
-            <h3>Managed Real Client Projects Solo</h3>
+            <h3>2. Managed Real Client Projects Solo</h3>
             <p>
               Took on freelance mobile projects independently, handling full
               delivery from requirement to release. Managing client expectations
               taught me where quality often breaks down first.
             </p>
           </article>
-
-          <!-- Journey Step 3 -->
           <article class="journey-step">
-            <h3>Saw the Gaps — Decided to Fix Them</h3>
+            <h3>3. Saw the Gaps — Decided to Fix Them</h3>
             <p>
               Working in development exposed the real cost of poor testing. I
               made a deliberate move to QA — not away from engineering, but
               deeper into it.
             </p>
           </article>
-
-          <!-- Journey Step 4 -->
           <article class="journey-step">
-            <h3>Now: QA in High-Stakes B2B Environment</h3>
+            <h3>4. Now: QA in High-Stakes B2B Environment</h3>
             <p>
               Now 1+ year as a QA Engineer in a B2B IT product environment,
               where thoroughness and risk assessment directly impact enterprise
               clients.
             </p>
           </article>
-        </div>
+        </div> -->
       </section>
+      
 
       <!-- Project Case Studies Section -->
-      <section id="projects">
+      <section class="projects" id="projects">
         <h2>📊 Project Case Studies</h2>
         <p>Real-world challenges solved through strategic QA approach</p>
 
@@ -135,7 +554,7 @@
             <h3>Authentication Testing — GuestApp</h3>
 
             <div class="challenge">
-              <h4>🎯 Challenge</h4>
+              <h4>Challenge</h4>
               <p>
                 Authentication is one of the most critical areas in any
                 application. Built a dedicated app from scratch to serve as a
@@ -143,8 +562,10 @@
               </p>
             </div>
 
+            <p class="tag tag-tech">click for details →</p>
+
             <div class="solution">
-              <h4>💡 Solution</h4>
+              <h4>⚡ Solution</h4>
               <p>
                 Designed manual test cases in spreadsheet, then implemented
                 automation using Playwright for E2E flows and Vitest + Supertest
@@ -154,40 +575,99 @@
             </div>
 
             <div class="impact">
-              <h4>📈 Impact</h4>
+              <h4>Tools/Techniques</h4>
               <div class="metrics">
                 <span class="metric">↓ Playwright</span>
                 <span class="metric">↓ Vitest + Supertest</span>
                 <span class="metric">↑ Manual Test Case</span>
+                <span class="metric">↓ Automation Testing</span>
               </div>
             </div>
           </article>
-
-          <!-- Project 2 -->
+          <div class="flip-content-overlay">
+            <div class="img-flip">
+              <img src="assets/auth-app.png" alt="Profile Image" />
+            </div>
+            <div class="text-flip">
+              <div class="tags">
+                <span class="tag tag-tech">Spreadsheet</span>
+                <span class="tag tag-tech">Manual Testing</span>
+                <span class="tag tag-year">CI/CD</span>
+                <span class="tag tag-tech">Automation Testing</span>
+                <span class="tag tag-year">2026</span>
+              </div>
+              <br />
+              <h5>Authentication Testing — GuestApp</h5>
+              <p>Result : </p>
+              <p>
+                Designed manual test cases in spreadsheet, then implemented automation using Playwright for E2E flows and Vitest + Supertest for API-level testing. Documented entire testing process from planning to bug resolution.
+Executed 38 test cases in total—9 unit/integration tests covering authentication and protected-route logic, plus 29 E2E scenarios across 11 functional areas (registration, login, logout, CRUD operations, and responsive UI)—with full documentation and Postman API evidence.
+              </p>
+              <a
+                href="https://evilestari-hireme.vercel.app/"
+                target="_blank"
+                class="demo-btn"
+              >
+                🔗 View Demo
+              </a>
+              <br />
+              <a href="https://gitlab.com/evLs/evilestari.hireme" target="_blank" class="source-code-btn">
+                💻 Source Code
+              </a>
+              <br />
+              <a
+                href="#"
+                target="_blank"
+                class="demo-btn"
+              >
+                🔗 View Documentation
+              </a>
+              <br />
+              <br />
+              <div class="card-footer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                QA Engineer · Team 1 
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <!-- Project 2 -->
+        <div class="projects-grid">
           <article class="project-card">
-            <h3>Payment & Billing QA — Alfamart Virtual Business</h3>
+            <h3>Payment & Billing Testing — Alfamart Virtual Business</h3>
 
             <div class="challenge">
-              <h4>🎯 Challenge</h4>
+              <h4>Challenge</h4>
               <p>
-                Testing payment and billing features in a large-scale retail
-                e-commerce environment, where financial accuracy directly
-                impacts end customers and enterprise operations.
+                Carrying out functional testing on the flow of creating PPOB transaction receipts, with specific scenarios distinguishing two user roles—the reseller and the reseller's final customer.
               </p>
             </div>
 
+            <p class="tag tag-tech">click for details →</p>
+
             <div class="solution">
-              <h4>💡 Solution</h4>
+              <h4>⚡ Solution</h4>
               <p>
-                Conducted functional and UAT testing across payment modules
-                including electricity and PDAM billing. Documented bugs with
-                structured reports covering description, expectation, priority,
-                and developer handoff notes.
+                Implement role-based functional testing, validating each combination of transactions against receipt formats which should differ based on user role, to ensure consistency of financial data on both sides.
               </p>
             </div>
 
             <div class="impact">
-              <h4>📈 Impact</h4>
+              <h4>Tools/Techniques</h4>
               <div class="metrics">
                 <span class="metric">↓ Functional Testing</span>
                 <span class="metric">↑ UAT</span>
@@ -195,40 +675,148 @@
               </div>
             </div>
           </article>
-
-          <!-- Project 3 -->
+          <div class="flip-content-overlay">
+            <div class="img-flip">
+              <img
+                src="assets/bugBillingPayment-report.png"
+                alt="Profile Image"
+              />
+            </div>
+            
+            <div class="text-flip">
+              <div class="tags">
+                <span class="tag tag-tech">Spreadsheet</span>
+                <span class="tag tag-tech">Manual Testing</span>
+                <span class="tag tag-year">2025</span>
+              </div>
+              <br />
+              <h5>Payment & Billing Testing — Alfamart Virtual Business</h5>
+              <p>Result : </p>
+              <p>
+                Identified 3 critical defects in the reseller vs. customer receipt differentiation logic before production release—preventing potential financial transaction documentation errors that could directly impact resellers and their customers.
+              </p>
+              <a
+                href="https://docs.google.com/spreadsheets/d/19A5BQViC8TpxSa62ULjxixthkb2o4ANT/edit?gid=178518924#gid=178518924"
+                target="_blank"
+                class="demo-btn"
+              >
+                🔗 View Documentation
+              </a>
+              <br />
+              <a href="https://github.com/alfamart/virtual-business" target="_blank" class="source-code-btn">
+                💻 Source Code
+              </a>
+              <br />
+              <br />
+              <div class="card-footer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                QA Engineer · Team 2 
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="projects-grid">
           <article class="project-card">
             <h3>Geofencing Validation — Promotion Media App</h3>
-
             <div class="challenge">
-              <h4>🎯 Challenge</h4>
+              <h4>Challenge</h4>
               <p>
-                Developed a location-based promotion application using
-                geofencing and the Crossing Number algorithm. Required rigorous
-                validation to ensure promotions only triggered within the
-                correct geographic areas.
+                Designing and validating location-based geofencing features to trigger targeted promotional notifications based on sales territories.
               </p>
             </div>
 
+            <p class="tag tag-tech">click for details →</p>
+
             <div class="solution">
-              <h4>💡 Solution</h4>
+              <h4>⚡ Solution</h4>
               <p>
-                Performed functional validation by testing promotion triggers
-                across defined geographic zones. Verified that the Crossing
-                Number calculation correctly determined whether a user was
-                inside or outside a target area.
+                Implementing the Crossing Number algorithm for boundary detection and conducting systematic testing across various location scenarios—including edge cases—using a boundary value testing approach.
               </p>
             </div>
 
             <div class="impact">
-              <h4>📈 Impact</h4>
+              <h4>Tools/Technique</h4>
               <div class="metrics">
                 <span class="metric">↑ Flutter + Firebase</span>
                 <span class="metric">↓ Functional Validation</span>
                 <span class="metric">⚡ Algorithm Testing</span>
+                <span class="metric">Crossing Number method</span>
               </div>
             </div>
           </article>
+          
+          <div class="flip-content-overlay">
+            <div class="img-flip">
+              <video autoplay muted loop>
+                <source src="assets/skripsi.MOV" type="video/mp4" />
+              </video>
+              <br />
+            </div>
+            <div class="text-flip">
+              <div class="tags">
+                <span class="tag tag-tech">Flutter · Firebase</span>
+                <span class="tag tag-year">2024</span>
+              </div>
+              <br />
+              <h5>Geofencing Validation — Promotion Media App</h5>
+              <p>Result : </p>
+              <p>
+                Achieved a 100% testing compliance rate across all validated location scenarios, ensuring promotional notifications were accurately delivered to targeted regions in support of Ragiel Ceramic's marketing strategy.
+              </p>
+              <a
+                href="https://your-demo-link.com"
+                target="_blank"
+                class="demo-btn"
+              >
+                🔗 View Demo
+              </a>
+              <br />
+              <a href="https://github.com/alfamart/virtual-business" target="_blank" class="source-code-btn">
+                💻 Source Code
+              </a>
+              <br />
+              <a
+                href="https://docs.google.com/spreadsheets/d/19A5BQViC8TpxSa62ULjxixthkb2o4ANT/edit?gid=178518924#gid=178518924"
+                target="_blank"
+                class="demo-btn"
+              >
+                🔗 View Documentation
+              </a>
+              <br />
+              <br />
+              <div class="card-footer">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="14"
+                  height="14"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                  <circle cx="12" cy="7" r="4" />
+                </svg>
+                QA Engineer · Team 1 
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -302,18 +890,14 @@
             />
           </div>
           <div class="about-text">
-            <h3>QA Specialist B2B IT Product</h3>
+            <h3>QA Engineer (Manual & Automation)</h3>
             <p>
               QA Engineer with a software engineering background — I test with a
               builder's perspective.
             </p>
 
             <p>
-              1+ year working in B2B IT products, I'm methodical about verifying
-              issues through the right channels before escalating, whether
-              that's cross-checking against system analyst flows or aligning
-              directly with developers. Manual and automation testing, always
-              with precision.
+              With over a year of experience in B2B IT products, I'm methodical in verifying every issue through the proper channels before escalating it—either by cross-checking against systems analyst workflows or coordinating directly with developers. I don't stop at "it works," but instead, I drill down to "it works right, in every scenario." Whether manual or automated, I always test with precision—because for me, great quality comes from an almost uncompromising attention to detail.
             </p>
 
             <p><strong>I specialize in:</strong></p>
@@ -325,28 +909,27 @@
               <div class="skill-badge">Cross-Platform</div>
             </div>
           </div>
-
-          <div>
-            <h3>Key Statistics</h3>
-            <div class="about-stats">
-              <div class="stat">
-                <div class="stat-number">1+</div>
-                <div class="stat-label">Years QA Experience</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">3+</div>
-                <div class="stat-label">Years Development Background</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">50+</div>
-                <div class="stat-label">Automation Test Cases</div>
-              </div>
-              <div class="stat">
-                <div class="stat-number">4</div>
-                <div class="stat-label">Major Projects</div>
-              </div>
-            </div>
+        </div>
+        <div class="about-key">
+          <h3>Key Statistics</h3>
+        </div>
+        <div class="about-stats">
+          <div class="stat">
+            <div class="stat-number">1+</div>
+            <div class="stat-label">Years QA Experience</div>
           </div>
+          <div class="stat">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Years Development Background</div>
+          </div>
+          <div class="stat">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Manual/Automation Test Cases</div>
+          </div>
+          <!-- <div class="stat">
+            <div class="stat-number">4</div>
+            <div class="stat-label">Major Projects</div>
+          </div> -->
         </div>
       </section>
 
@@ -368,7 +951,7 @@
           "
         >
           <a
-            href="mailto:evi.lestari@example.com"
+            href="mailto:evilestari.hireme@gmail.com"
             class="btn-primary"
             style="
               display: inline-block;
@@ -442,5 +1025,7 @@
 
     <!-- ========== Scripts ========== -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/modelofjourney.js"></script>
   </body>
+
 </html>

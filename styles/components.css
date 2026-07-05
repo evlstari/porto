@@ -26,19 +26,11 @@
   justify-content: center;
   flex-wrap: wrap;
   margin-top: var(--space-lg);
-
 }
 
 .cta-buttons button {
   padding: var(--space-md) var(--space-lg);
 }
-
-
-
-
-
-
-
 
 /* ========== Journey Section - Steps ========== */
 .journey-container {
@@ -75,11 +67,22 @@
 }
 
 /* ========== Project Cards Grid ========== */
+
+
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-lg);
   margin: var(--space-lg) 0;
+
+  position: relative;
+  perspective: 1000px;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+}
+
+.projects-grid.flipped {
+  transform: rotateY(180deg);
 }
 
 @media (min-width: 768px) {
@@ -88,18 +91,199 @@
   }
 }
 
+@media (min-width: 300px) and (max-width: 700px) {
+  .flip-content-overlay {
+    grid-template-columns: 1fr !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .img-flip img {
+    height: 30px;
+    width: auto;
+    justify-content: space-between;
+
+  }
+
+  video{
+    height: 50%;
+    width: auto;
+    justify-content: space-between;
+  }
+  
+
+}
+
+ .flip-content-overlay > div {
+  width: 100%;
+} 
+
+
 .project-card {
   background: linear-gradient(
     135deg,
     var(--color-dark-light),
     var(--color-dark)
   );
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+  cursor: pointer;
+  backface-visibility: hidden;
 }
+
+/* .project-card.flipped {
+  transform: rotateY(180deg);
+} */
 
 .project-card h3 {
   color: var(--color-emerald);
+}
+
+.tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 10px;
+  border-radius: 20px;
+  margin-right: 4px;
+  align-items: space-between;
+}
+
+.tag-tech {
+  background: #E6F1FB;
+  color: #0C447C;
+}
+
+.tag-year {
+  background: #FAECE7;
+  color: #712B13;
+}
+
+
+/* --- Body --- */
+.card-body {
+  padding: 0.9rem 1.25rem;
+}
+
+.section-lbl {
+  font-size: 10px;
+  font-weight: 500;
+  color: #9ca3af;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0.75rem 0 4px;
+}
+
+.section-lbl:first-child {
+  margin-top: 0;
+}
+
+.desc {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/*.metrics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.metric {
+  font-size: 11px;
+  font-weight: 500;
+  background: #E1F5EE;
+  color: #085041;
+  border-radius: 6px;
+  padding: 4px 10px;
+}*/
+
+/* --- Footer --- */
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0.65rem 1.25rem;
+  border-top: 1px solid #e5e7eb;
+  background: #f9fafb;
+  font-size: 12px;
+  color: #6b7280;
+}
+
+
+.flip-content-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding: 10px 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+  /* justify-content: space-around; */
+  /* flex-direction: column; */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background: var(--color-dark-light);
+  border-radius: 5px;
+  transform: rotateY(180deg);
+
+  backface-visibility: hidden;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+}
+
+.img-flip img {
+  justify-self: center;
+  align-self: center;
+  object-fit: cover;
+  width: 100%;
+  height: 450px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+video {
+  height: 450px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  object-fit: cover;
+}
+
+#bg-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.flip-content-overlay h5 {
+  font-size: 20px;
+  color: var(--color-cyan);
+}
+
+.text-flip {
+  align-items: start;
+  justify-content: center;
+  padding: 20px 20px;
 }
 
 .challenge,
@@ -132,11 +316,11 @@
 }
 
 /* ========== Metrics ========== */
-.metrics {
+ .metrics {
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
-}
+} 
 
 .metric {
   background-color: rgba(0, 212, 255, 0.1);
@@ -147,6 +331,7 @@
   color: var(--color-cyan);
   font-weight: 600;
 }
+  
 
 /* ========== QA Perspective Box ========== */
 .qa-perspective {
@@ -186,11 +371,27 @@
 }
 
 /* ========== About Section ========== */
+#about {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#about h2 {
+  text-align: center;
+}
+
+.about-key {
+  text-align: center;
+}
+
 .about-container {
   display: grid;
   grid-template-columns: 1fr;
   gap: var(--space-xl);
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -236,9 +437,25 @@
   color: var(--color-cyan);
 }
 
+.about-image {
+  width: 400px;
+  margin: auto;
+  padding: 6px;
+  border-radius: 28px;
+  background: linear-gradient(135deg, #6c5ce7, #00cec9);
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+}
 .about-stats {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: var(--space-lg);
 }
 
@@ -276,3 +493,36 @@
 .accent-emerald {
   color: var(--color-emerald);
 }
+
+.project-preview img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+ /* ===== PENDEKATAN 1: Auto-switch vertikal <-> horizontal ===== */
+  /* Default (layar besar): tampilkan horizontal, sembunyikan vertikal */
+  .responsive-timeline .tl-mobile { display: none; }
+  .responsive-timeline .tl-desktop { display: block; }
+ 
+  /* Saat lebar layar <= 700px: sembunyikan horizontal, tampilkan vertikal */
+  @media (max-width: 700px) {
+    .responsive-timeline .tl-desktop { display: none; }
+    .responsive-timeline .tl-mobile { display: block; }
+  }
+ 
+  /* SVG dibuat fluid: lebar mengikuti container, tinggi menyesuaikan viewBox */
+  .responsive-timeline svg { width: 100%; height: auto; }
+
+  .clickable-text {
+    cursor: pointer;
+    transition: fill 1.3s ease;
+  }
+
+  .clickable-text:hover {
+    fill: var(--color-cyan);
+  }
+
+  
